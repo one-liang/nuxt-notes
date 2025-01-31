@@ -3,6 +3,13 @@
 @tailwind utilities;
 
 @layer base {
+  @font-face {
+    font-family: "Pacifico";
+    src: url("/fonts/Pacifico-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+  }
+
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;

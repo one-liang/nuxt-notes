@@ -1,3 +1,4 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
 const animate = require("tailwindcss-animate")
 
 /** @type {import('tailwindcss').Config} */
@@ -15,6 +16,9 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        pacifico: ["'Pacifico'", ...defaultTheme.fontFamily.sans],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
